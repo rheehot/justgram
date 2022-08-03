@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* 전체 box */
+#wrap{}
+
+/* header */
+header{
+  width: 1440px;
+}
+nav{
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+  background-color: cornflowerblue;
+}
+nav>ul.left{
+  display: flex;
+}
+nav>ul.right{
+  display: flex;
+}
+
+/* contents */
+#contentsWrap{
+  width: 580px;
+  height: 700px;
+  margin: 0 auto;
+  border: 1px solid #999;
+}
+

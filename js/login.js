@@ -1,8 +1,8 @@
 //3가지 요소가 필요함       elements:배열안으로 들어감
 //getElementById : HTML에 아이디명으로 요소를 가져옴
-const idForm = document.getElementById('idForm');  //id요소
-const pwForm = document.getElementById('pwForm');  //pw요소
-const btnEvent = document.getElementById('btn');   //btn요소
+// const idForm = document.getElementById('idForm');  //id요소
+// const pwForm = document.getElementById('pwForm');  //pw요소
+// const btnEvent = document.getElementById('btn');   //btn요소
 
 //addEventListener등록
 //addEventListever('', () => { 실행 }) : 익명함수, 이름없는 함수
@@ -29,7 +29,12 @@ function onInput(){
   }
 }
 
-idForm.addEventListener('')
+idForm.addEventListener('input',onInput);
+pwForm.addEventListener('input',onInput);
+btnEvent.addEventListener('button', (event) => {
+  event.preventDefault();
+});
+
 onInput()
 
 
